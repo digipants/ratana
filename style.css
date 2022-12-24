@@ -1339,6 +1339,74 @@ textarea.w-select {
     display: none !important
 }
 
+.card-container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-left: 0px;
+}
+
+.card-container .card {
+    position: relative;
+    max-width: 275px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.card-container .card:hover {
+    background-color: #455d58;
+    height: 350px;
+}
+
+
+.card-container .card .card-image {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40%;
+    left: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.card-container .card .card-image img {
+    max-width: 100%;
+    border-radius: 15px 0px 15px 0px;
+    border: 3px solid white;
+}
+
+.card-container .card .card-content {
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.card-container .card:hover .card-content {
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+
+}
+
 .w-slider {
     position: relative;
     height: 300px;
@@ -2434,8 +2502,8 @@ figcaption {
 }
 
 .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .section.full-height {
@@ -2463,8 +2531,8 @@ figcaption {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 61, 60, 0.8)), to(rgba(56, 61, 60, 0.8))), url("https://zescher.com/background.jpg");
-    background-image: linear-gradient(180deg, rgba(56, 61, 60, 0.8), rgba(56, 61, 60, 0.8)), url("https://zescher.com/background.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 61, 60, 0.8)), to(rgba(56, 61, 60, 0.8))), url("https://crafterina.co/corridor.png");
+    background-image: linear-gradient(180deg, rgba(56, 61, 60, 0.8), rgba(56, 61, 60, 0.8)), url("https://crafterina.co/corridor.png");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     color: #fff;
@@ -2500,8 +2568,8 @@ figcaption {
 }
 
 .section.large.photo-background {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.5)), to(rgba(69, 93, 88, 0.5))), url("https://zescher.com/background.webp");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.5), rgba(69, 93, 88, 0.5)), url("https://zescher.com/background.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.5)), to(rgba(69, 93, 88, 0.5))), url("https://crafterina.co/background.jpg");
+    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.5), rgba(69, 93, 88, 0.5)), url("https://crafterina.co/background.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     color: #fff;
@@ -2578,14 +2646,15 @@ figcaption {
 }
 
 .button.border.reversed {
-    border-color: #fff;
+    border-color: #455d58;
     background-color: transparent;
     color: #fff;
 }
 
 .button.border.reversed:hover {
-    background-color: #fff;
-    color: #455d58;
+    background-color: #455d58;
+    color: #fff;
+    transition: 1s;
 }
 
 .button.border.cream {
@@ -2618,8 +2687,8 @@ figcaption {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.1)), to(rgba(69, 93, 88, 0.1))), url("https://zescher.com/hall.png");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.1), rgba(69, 93, 88, 0.1)), url("https://zescher.com/hall.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.1)), to(rgba(69, 93, 88, 0.1))), url("https://crafterina.co/hall.png");
+    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.1), rgba(69, 93, 88, 0.1)), url("https://crafterina.co/hall.png");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     -o-object-fit: cover;
@@ -2905,8 +2974,50 @@ figcaption {
 }
 
 .logo {
-    max-height: 50px;
+    max-height: 50;
+    margin-left: 20;
+}
+
+.rest-logo {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.rest img{
+    position: relative;
+    max-width: 300px;
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    transition: all .3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.rest img:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 20px 50px rgba(243, 22, 22, 0.5);
+}
+
+.booking-logo img {
+    padding: 20px;
+    background-color: white;
+    width: 200px;
+    height: 100px;
     margin-left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.booking-logo img:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 20px 50px rgba(198,164,89, 0.5);
 }
 
 .nav-container {
@@ -3189,19 +3300,19 @@ figcaption {
 }
 
 .slide.home {
-    background-image: url("https://zescher.com/IMG_0013.JPG");
+    background-image: url("https://crafterina.co/IMG_0013.JPG");
 }
 
 .slide.home._1 {
-    background-image: url("https://zescher.com/IMG_0015.JPG");
+    background-image: url("https://crafterina.co/IMG_0015.JPG");
 }
 
 .slide.home._2 {
-    background-image: url("https://zescher.com/stage.JPG");
+    background-image: url("https://crafterina.co/stage.JPG");
 }
 
 .slide.home._3 {
-    background-image: url("https://zescher.com/background.png");
+    background-image: url("https://crafterina.co/background.png");
 }
 
 .title-section-wrapper {
