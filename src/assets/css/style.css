@@ -2531,8 +2531,8 @@ figcaption {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 61, 60, 0.8)), to(rgba(56, 61, 60, 0.8))), url("https://crafterina.co/fullheight.png");
-    background-image: linear-gradient(180deg, rgba(56, 61, 60, 0.8), rgba(56, 61, 60, 0.8)), url("https://crafterina.co/fullheight.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(56, 61, 60, 0.8)), to(rgba(56, 61, 60, 0.8))), url("https://ratanainternational.com/src/assets/images/fullheight.png");
+    background-image: linear-gradient(180deg, rgba(56, 61, 60, 0.8), rgba(56, 61, 60, 0.8)), url("https://ratanainternational.com/src/assets/images/fullheight.png");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     color: #fff;
@@ -2568,8 +2568,8 @@ figcaption {
 }
 
 .section.large.photo-background {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.5)), to(rgba(69, 93, 88, 0.5))), url("https://crafterina.co/background.jpg");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.5), rgba(69, 93, 88, 0.5)), url("https://crafterina.co/background.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.5)), to(rgba(69, 93, 88, 0.5))), url("https://ratanainternational.com/src/assets/images/background.jpg");
+    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.5), rgba(69, 93, 88, 0.5)), url("https://ratanainternational.com/src/assets/images/background.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     color: #fff;
@@ -2687,8 +2687,8 @@ figcaption {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.1)), to(rgba(69, 93, 88, 0.1))), url("https://crafterina.co/hall.png");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.1), rgba(69, 93, 88, 0.1)), url("https://crafterina.co/hall.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.1)), to(rgba(69, 93, 88, 0.1))), url("https://ratanainternational.com/src/assets/images/hall.png");
+    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.1), rgba(69, 93, 88, 0.1)), url("https://ratanainternational.com/src/assets/images/hall.png");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     -o-object-fit: cover;
@@ -2988,7 +2988,7 @@ figcaption {
     padding: 30px;
 }
 
-.rest img{
+.rest img {
     position: relative;
     max-width: 300px;
     margin: 10px 50px;
@@ -3017,7 +3017,7 @@ figcaption {
 
 .booking-logo img:hover {
     transform: translateY(-20px);
-    box-shadow: 0 20px 50px rgba(198,164,89, 0.5);
+    box-shadow: 0 20px 50px rgba(198, 164, 89, 0.5);
 }
 
 .nav-container {
@@ -3300,19 +3300,19 @@ figcaption {
 }
 
 .slide.home {
-    background-image: url("https://crafterina.co/IMG_0013.JPG");
+    background-image: url("https://ratanainternational.com/src/assets/images/IMG_0013.JPG");
 }
 
 .slide.home._1 {
-    background-image: url("https://crafterina.co/IMG_0015.JPG");
+    background-image: url("https://ratanainternational.com/src/assets/images/IMG_0015.JPG");
 }
 
 .slide.home._2 {
-    background-image: url("https://crafterina.co/stage.JPG");
+    background-image: url("https://ratanainternational.com/src/assets/images/stage.JPG");
 }
 
 .slide.home._3 {
-    background-image: url("https://crafterina.co/background.png");
+    background-image: url("https://ratanainternational.com/src/assets/images/background.png");
 }
 
 .title-section-wrapper {
