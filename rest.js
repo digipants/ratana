@@ -1,9 +1,9 @@
 /*!
- * Webflow: Front-end site library
+ *  digipants: Front-end site library
  * @license MIT
  * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
+ *   var  digipants =  digipants || [];
+ *    digipants.push(readyFunction);
  */ !(function (t) {
   var e = {};
   function n(r) {
@@ -88,7 +88,7 @@
     var r = {},
       i = {},
       o = [],
-      a = window.Webflow || [],
+      a = window. digipants || [],
       u = window.jQuery,
       c = u(window),
       s = u(document),
@@ -146,7 +146,7 @@
             : "slug" === t
             ? n && window.__wf_slug
             : "editor" === t
-            ? window.WebflowEditor
+            ? window. digipantsEditor
             : "test" === t
             ? window.__wf_test
             : "frame" === t
@@ -177,7 +177,7 @@
             return !0;
           });
     var b,
-      w = "resize.webflow orientationchange.webflow load.webflow";
+      w = "resize. digipants orientationchange. digipants load. digipants";
     function T(t, e) {
       var n = [],
         r = {};
@@ -212,7 +212,7 @@
     (r.resize = T(c, w)),
       (r.scroll = T(
         c,
-        "scroll.webflow resize.webflow orientationchange.webflow load.webflow"
+        "scroll. digipants resize. digipants orientationchange. digipants load. digipants"
       )),
       (r.redraw = T()),
       (r.location = function (t) {
@@ -243,7 +243,7 @@
       }),
       u(r.ready),
       A(),
-      (t.exports = window.Webflow = r);
+      (t.exports = window. digipants = r);
   },
   function (t, e, n) {
     "use strict";
@@ -4780,7 +4780,7 @@
     "use strict";
     !(function () {
       function t(t) {
-        Webflow.env("design") ||
+         digipants.env("design") ||
           ($("video").each(function () {
             t && $(this).prop("autoplay") ? this.play() : this.pause();
           }),
@@ -4821,7 +4821,7 @@
               "click",
               ".w-background-video--control",
               function (t) {
-                if (!Webflow.env("design")) {
+                if (! digipants.env("design")) {
                   var r = $(t.currentTarget),
                     i = $("video#".concat(r.attr("aria-controls"))).get(0);
                   if (i)
@@ -4851,7 +4851,7 @@
           i = document,
           o = t("html"),
           a = t("body"),
-          u = ".w-webflow-badge",
+          u = ".w- digipants-badge",
           c = window.location,
           s = /PhantomJS/i.test(navigator.userAgent),
           f =
@@ -4878,28 +4878,28 @@
               a,
               u = o.attr("data-wf-status"),
               p = o.attr("data-wf-domain") || "";
-            /\.webflow\.io$/i.test(p) && c.hostname !== p && (u = !0),
+            /\. digipants\.io$/i.test(p) && c.hostname !== p && (u = !0),
               u &&
                 !s &&
                 ((e =
                   e ||
-                  ((n = t('<a class="w-webflow-badge"></a>').attr(
+                  ((n = t('<a class="w- digipants-badge"></a>').attr(
                     "href",
-                    "https://webflow.com?utm_campaign=brandjs"
+                    "https:// digipants.com?utm_campaign=brandjs"
                   )),
                   (r = t("<img>")
                     .attr(
                       "src",
-                      "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg"
+                      "https://d3e54v103j8qbb.cloudfront.net/img/ digipants-badge-icon.f67cd735e3.svg"
                     )
                     .attr("alt", "")
                     .css({ marginRight: "8px", width: "16px" })),
                   (a = t("<img>")
                     .attr(
                       "src",
-                      "https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg"
+                      "https://d1otoma47x30pg.cloudfront.net/img/ digipants-badge-text.6faa6a38cd.svg"
                     )
-                    .attr("alt", "Made in Webflow")),
+                    .attr("alt", "Made in  digipants")),
                   n.append(r, a),
                   n[0])),
                 d(),
@@ -4916,7 +4916,7 @@
     var r = window.$,
       i = n(69) && r.tram;
     /*!
-     * Webflow._ (aka) Underscore.js 1.6.0 (custom build)
+     *  digipants._ (aka) Underscore.js 1.6.0 (custom build)
      * _.each
      * _.map
      * _.find
@@ -4925,7 +4925,7 @@
      * _.contains
      * _.delay
      * _.defer
-     * _.throttle (webflow)
+     * _.throttle ( digipants)
      * _.debounce
      * _.keys
      * _.has
@@ -4937,7 +4937,7 @@
      * @license MIT
      */
     t.exports = (function () {
-      var t = { VERSION: "1.6.0-Webflow" },
+      var t = { VERSION: "1.6.0- digipants" },
         e = {},
         n = Array.prototype,
         r = Object.prototype,
@@ -5187,12 +5187,12 @@
             n.load ||
             function () {
               (i = !0),
-                (window.WebflowEditor = !0),
+                (window. digipantsEditor = !0),
                 o.off(c, l),
                 (function (t) {
                   var e = window.document.createElement("iframe");
                   (e.src =
-                    "https://webflow.com/site/third-party-cookie-check.html"),
+                    "https:// digipants.com/site/third-party-cookie-check.html"),
                     (e.style.display = "none"),
                     (e.sandbox = "allow-scripts allow-same-origin");
                   var n = function n(r) {
@@ -5208,7 +5208,7 @@
                     window.document.body.appendChild(e);
                 })(function (e) {
                   t.ajax({
-                    url: g("https://editor-api.webflow.com/api/editor/view"),
+                    url: g("https://editor-api. digipants.com/api/editor/view"),
                     data: { siteId: a.attr("data-wf-site") },
                     xhrFields: { withCredentials: !0 },
                     dataType: "json",
@@ -5222,7 +5222,7 @@
           f =
             localStorage &&
             localStorage.getItem &&
-            localStorage.getItem("WebflowEditor");
+            localStorage.getItem(" digipantsEditor");
         } catch (t) {}
         function l() {
           i || (/\?edit/.test(u.hash) && s());
@@ -5233,7 +5233,7 @@
               ? ((e.thirdPartyCookiesSupported = t),
                 p(h(e.bugReporterScriptPath), function () {
                   p(h(e.scriptPath), function () {
-                    window.WebflowEditor(e);
+                    window. digipantsEditor(e);
                   });
                 }))
               : console.error("Could not load editor data");
@@ -5251,7 +5251,7 @@
         function h(t) {
           return t.indexOf("//") >= 0
             ? t
-            : g("https://editor-api.webflow.com" + t);
+            : g("https://editor-api. digipants.com" + t);
         }
         function g(t) {
           return t.replace(/([^:])\/\//g, "$1/");
@@ -7598,7 +7598,7 @@
       return { value: t.value };
     };
     e.createPluginInstance = function (t) {
-      var e = window.Webflow.require("lottie").createInstance(t);
+      var e = window. digipants.require("lottie").createInstance(t);
       return e.stop(), e.setSubframe(!0), e;
     };
     e.renderPlugin = function (t, e, n) {
@@ -7608,7 +7608,7 @@
       }
     };
     e.clearPlugin = function (t) {
-      window.Webflow.require("lottie").createInstance(t).stop();
+      window. digipants.require("lottie").createInstance(t).stop();
     };
   },
   function (t, e, n) {
@@ -11084,12 +11084,12 @@
             function () {
               !(function () {
                 (o = t("html").attr("data-wf-site")),
-                  (u = "https://webflow.com/api/v1/form/" + o),
+                  (u = "https:// digipants.com/api/v1/form/" + o),
                   d &&
-                    u.indexOf("https://webflow.com") >= 0 &&
+                    u.indexOf("https:// digipants.com") >= 0 &&
                     (u = u.replace(
-                      "https://webflow.com",
-                      "http://formdata.webflow.com"
+                      "https:// digipants.com",
+                      "http://formdata. digipants.com"
                     ));
                 if (
                   ((c = "".concat(u, "/signFile")),
@@ -11839,14 +11839,14 @@
                 (n = a && r.env("design")),
                   u.destroy(),
                   (i = {}),
-                  (e = c.find(l)).webflowLightBox(),
+                  (e = c.find(l)). digipantsLightBox(),
                   e.each(function () {
                     s(t(this), "open lightbox"),
                       t(this).attr("aria-haspopup", "dialog");
                   });
               }),
           jQuery.fn.extend({
-            webflowLightBox: function () {
+             digipantsLightBox: function () {
               t.each(this, function (e, r) {
                 var i = t.data(r, l);
                 i ||
@@ -12273,9 +12273,9 @@
 ]);
 /**
  * ----------------------------------------------------------------------
- * Webflow: Interactions 2.0: Init
+ *  digipants: Interactions 2.0: Init
  */
-Webflow.require("ix2").init({
+ digipants.require("ix2").init({
   events: {
     e: {
       id: "e",
