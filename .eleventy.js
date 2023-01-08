@@ -1,6 +1,6 @@
 module.exposrts = function (eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy('./src/assets');
+    eleventyConfig.addPassthroughCopy('./assets');
 
     return {
         dir: {
