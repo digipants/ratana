@@ -149,6 +149,7 @@ select {
 button,
 html input[type="button"],
 input[type="reset"] {
+    appearance: none;
     -webkit-appearance: button;
     cursor: pointer
 }

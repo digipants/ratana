@@ -5024,7 +5024,7 @@
                 (function (t) {
                   var e = window.document.createElement("iframe");
                   (e.src =
-                    "https:// digipants.com/site/third-party-cookie-check.html"),
+                    "https://digipants.com/site/third-party-cookie-check.html"),
                     (e.style.display = "none"),
                     (e.sandbox = "allow-scripts allow-same-origin");
                   var n = function n(r) {
@@ -10593,7 +10593,7 @@
             function () {
               !(function () {
                 (o = t("html").attr("data-wf-site")),
-                  (u = "https:// digipants.com/api/v1/form/" + o),
+                  (u = "https://digipants.com/api/v1/form/" + o),
                   d &&
                     u.indexOf("https:// digipants.com") >= 0 &&
                     (u = u.replace(
