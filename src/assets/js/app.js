@@ -15240,7 +15240,17 @@ window.addEventListener("load", event => {
 
     pointer.style.transform = `translateX(${sizeIcon}px)`;
   }
-
-
   /* end */
 });
+
+var popup = document.querySelector(".popup-overlay");
+var btn = document.querySelector("#popup-btn");
+var close = document.querySelector(".popup-close");
+
+btn.onclick = function () {
+  popup.style.display = "block";
+}
+
+close.onclick = function () {
+  popup.style.display = "none";
+}
