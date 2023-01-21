@@ -2254,11 +2254,11 @@ textarea.w-select {
 }
 
 .cards li .details .name:before {
-    content: "\f2c0";
+    content: "\f007";
 }
 
 .cards li .details .title:before {
-    content: "\f2c1";
+    content: "\f13d";
 }
 
 .cards li .details .phone:before {
