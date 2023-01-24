@@ -10201,7 +10201,7 @@ blockquote {
     position: absolute;
     bottom: 15vh;
     z-index: 10;
-    color: #ccb0b3;
+    color: #302627;
     font-size: .9em;
     font-weight: 600;
     letter-spacing: .6em;
@@ -10262,7 +10262,7 @@ blockquote {
 }
 
 .preloader-brand-title {
-    color: #fff;
+    color: #302627;
     font-size: 1.6em;
     line-height: 1.3em;
     font-weight: 700;
@@ -10308,7 +10308,7 @@ blockquote {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 8;
+    z-index: 10;
     background-color: #302627
 }
 
