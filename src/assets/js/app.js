@@ -15255,7 +15255,11 @@ close.onclick = function () {
   popup.style.display = "none";
 }
 
-var datepicker = document.querySelector("#datepicker");
-var today = new Date();
-
-datepicker.setAttribute("min", today.toISOString().split("T")[0]);
+$("#datepicker").datepicker({
+  dateFormat: "dd-mm-yy",
+  minDate: new Date(),
+  maxDate: "+3M",
+  onSelect: function (date) {
+    // Code to run when a date is selected
+  }
+});
