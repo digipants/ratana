@@ -15255,10 +15255,3 @@ close.onclick = function () {
   popup.style.display = "none";
 }
 
-
-$("#check-in-date").datepicker({
-  minDate: new Date(),
-});
-$("#check-out-date").datepicker({
-  minDate: new Date(),
-});
