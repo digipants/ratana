@@ -105,16 +105,22 @@
                     <div class="w-form">
                         <form id="email-form" name="email-form" data-netlify="true" data-name="Email Form" method="POST"
                             aria-label="Email Form">
-                            <label for="name">Name</label><input type="text" class="text-field w-input" maxlength="256"
-                                name="name" data-name="Name" placeholder="Your Name" id="name"><label for="email">Email
-                                Address</label><input type="email" class="text-field w-input" maxlength="256"
+                            <label for="name">Name</label>
+                            <input type="text" class="text-field w-input" maxlength="256"
+                                name="name" data-name="Name" placeholder="Your Name" id="name">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="text-field w-input" maxlength="256"
                                 name="email" data-name="Email" placeholder="bookings@ratanainternational.com" id="email"
-                                required=""><label for="Phone">Phone</label><input type="tel" class="text-field w-input"
-                                maxlength="256" name="Phone" data-name="Phone" placeholder="800 435 7463" id="Phone"
-                                required=""><label for="Phone-2">Message</label><textarea placeholder="Example Message"
-                                maxlength="5000" id="field" name="field" data-name="field"
-                                class="text-field area w-input"></textarea><input type="submit" value="Book"
-                                data-wait="Please wait..." class="button submit w-button">
+                                required="">
+                            <label for="Phone">Phone</label>
+                            <input type="tel" class="text-field w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="800 435 7463" id="Phone" required="">
+                            <label for="arrival">Arrival</label>
+                            <input type="text" id="arrival" name="arrival">
+                            <label for="departure">Departure</label>
+                            <input type="text" id="departure" name="departure">
+                            <label for="Phone-2">Message</label>
+                            <textarea placeholder="Example Message" maxlength="5000" id="field" name="field" data-name="field" class="text-field area w-input"></textarea>
+                            <input type="submit" value="Book" data-wait="Please wait..." class="button submit w-button">
                         </form>
                         <div class="success-message w-form-done" tabindex="-1" role="region"
                             aria-label="Email Form success">
