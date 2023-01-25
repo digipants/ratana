@@ -117,13 +117,11 @@
                                 required="">
                             <label for="Phone">Phone</label>
                                 <input type="tel" class="text-field w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="800 435 7463" id="Phone" required="">
-                            <label for="from">Arrival</label>
-                                <input type="text" id="datepicker" name="from">
-                            <label for="to">Departure</label>
-                                <input type="text" class="datepicker" name="to">
-                            <label for="Phone-2">Message</label>
-                                <textarea placeholder="Example Message" maxlength="5000" id="field" name="field" data-name="field" class="text-field area w-input"></textarea>
-                                <input type="submit" value="Book" data-wait="Please wait..." class="button submit w-button">
+                            <label for="check-in-date">Check-In Date:</label>
+                            <input type="text" id="check-in-date" name="check-in-date">
+                            <label for="check-out-date">Check-Out Date:</label>
+                            <input type="text" id="check-out-date" name="check-out-date"> <br>
+                            <input type="submit" value="Book" data-wait="Please wait..." class="button submit w-button">
                         </form>
                         <div class="success-message w-form-done" tabindex="-1" role="region"
                             aria-label="Email Form success">
@@ -195,6 +193,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        $("#check-in-date").datepicker({
+            minDate: new Date(),
+        });
+        $("#check-out-date").datepicker({
+            minDate: new Date(),
+        });
+    </script>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5e6fa3fee53be89cfb4fb9b1"
         type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>

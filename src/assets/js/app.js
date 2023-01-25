@@ -15255,11 +15255,10 @@ close.onclick = function () {
   popup.style.display = "none";
 }
 
-$("#datepicker").datepicker({
-  dateFormat: "dd-mm-yy",
+
+$("#check-in-date").datepicker({
   minDate: new Date(),
-  maxDate: "+3M",
-  onSelect: function (date) {
-    // Code to run when a date is selected
-  }
+});
+$("#check-out-date").datepicker({
+  minDate: new Date(),
 });
