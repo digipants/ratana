@@ -10593,12 +10593,12 @@
             function () {
               !(function () {
                 (o = t("html").attr("data-wf-site")),
-                  (u = "https://digipants.com/api/v1/form/" + o),
+                  (u = "https://ratanainternational.com/api/v1/form/" + o),
                   d &&
-                    u.indexOf("https://digipants.com") >= 0 &&
+                u.indexOf("https://ratanainternational.com") >= 0 &&
                     (u = u.replace(
-                      "https://digipants.com",
-                      "http://formdata.digipants.com"
+                      "https://ratanainternational.com",
+                      "http://formdata.ratanainternational.com"
                     ));
                 if (
                   ((c = "".concat(u, "/signFile")),
