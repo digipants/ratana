@@ -1,6 +1,10 @@
 // An object to store the room type rates
 $(function(){
     var rates = {
+        select: {
+            weekdays:0,
+            weekends:0
+        },
         standard: {
             weekdays: 2100,
             weekends: 2300

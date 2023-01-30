@@ -94,52 +94,12 @@
         <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
     </div>
     <div data-w-id="0936c15f-1968-b1c4-12db-853cbb0430bc" class="section large wf-section">
-        <div class="container narrow">
-            <div class="block-600">
-                <div style="opacity: 1;" class="fade-in-1">
-                    <h1>Book</h1>
-                </div>
-                <div style="opacity: 1;" class="fade-in-2">
-                    <p>Ratana International has 12 suite rooms, 50 Executive rooms, conference hall -200 pax and banquet
-                        hall -500 pax which are ideal for anyone searching for a holiday, training or
-                        meeting accommodation.</p>
-                </div>
-                <div style="opacity: 1;" class="fade-in-3">
-                    <div class="w-form">
-                        <form id="email-form" action="/thanks" data-netlify="true" name="booking-form" data-name="Email Form" method="post"
-                            aria-label="Email Form">
-                            <label for="name">Name</label>
-                                <input type="text" class="text-field w-input" maxlength="256"
-                                name="name" data-name="Name" placeholder="Your Name" id="name">
-                            <label for="email">Email Address</label>
-                                <input type="email" class="text-field w-input" maxlength="256"
-                                name="email" data-name="Email" placeholder="bookings@ratanainternational.com" id="email"
-                                required="">
-                            <label for="Phone">Phone</label>
-                                <input type="tel" class="text-field w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="800 435 7463" id="Phone" required="">
-                            <label for="check-in-date">Check-In Date:</label>
-                            <input type="text" id="check-in-date" name="check-in-date" class="text-field w-input">
-                            <label for="check-out-date">Check-Out Date:</label>
-                            <input type="text" id="check-out-date" name="check-out-date" class="text-field w-input"> <br>
-                            <label for="room-type">Room Type:</label>
-                            <select id="room-type" name="room-type" class="text-field w-input">
-                                <option value="select">Select</option>
-                                <option value="standard">Standard</option>
-                                <option value="deluxe">Deluxe</option>
-                                <option value="suite">Suite</option>
-                            </select>
-                            <label for="rate-display">
-                                <span id="rate-display" name="rate-display"></span>
-                            </label>
-                            <input type="submit" value="Book" data-wait="Please wait..." class="button submit w-button">
-                        </form>
-                        <div class="success-message w-form-done" tabindex="-1" role="region"
-                            aria-label="Email Form success">
-                            <div>Thank you! Your submission has been received!</div>
-                        </div>
-                        <div class="error-message w-form-fail" tabindex="-1" role="region"
-                            aria-label="Email Form failure">
-                            <div>Oops! Something went wrong while submitting the form.</div>
+        <div class="section large">
+            <div class="container">
+                <div class="block-600">
+                    <div style="opacity: 1;" class="fade-in-1"></div>
+                        <div class="success-message" tabindex="-1" role="region" aria-label="Email Form success">
+                            <div>Thank you! Your booking information has been received!</div>
                         </div>
                     </div>
                 </div>
@@ -197,86 +157,12 @@
                 </div>
             </div>
             <div class="fade-in-5" style="opacity: 1;">
-                <div class="copyright">Copyright © 2022 Ratana. Powered by <a href="https://digipants.com/"
-                        target="_blank" class="cream-link">DigiPants</a>. Support <a href="https://digipants.com/"
-                        target="_blank" class="cream-link">Bhupendra Kumar</a>.</div>
+                <div class="copyright">Copyright © 2022 Ratana. Powered by <a href="https://digipants.com/" target="_blank"
+                        class="cream-link">DigiPants</a>. Support <a href="https://digipants.com/" target="_blank"
+                        class="cream-link">Bhupendra Kumar</a>.</div>
             </div>
         </div>
     </footer>
-    <script>
-        var rates = {
-            standard: {
-                weekdays: 2100,
-                weekends: 2300
-            },
-            deluxe: {
-                weekdays: 2500,
-                weekends: 2700
-            },
-            suite: {
-                weekdays: 2900,
-                weekends: 3100
-            }
-        };
-        // Get the room type, check-in, and check-out input elements
-        var roomType = document.getElementById("room-type");
-        var checkIn = document.getElementById("check-in-date");
-        var checkOut = document.getElementById("check-out-date");
-
-        // Get the rate display element
-        var rateDisplay = document.getElementById("rate-display");
-
-        // Add an event listener to the room type input to update the rate when it changes
-        roomType.addEventListener("change", updateRate);
-
-        // Add an event listener to the check-in input to update the rate when it changes
-        checkIn.addEventListener("change", updateRate);
-
-        // Add an event listener to the check-out input to update the rate when it changes
-        checkOut.addEventListener("change", updateRate);
-
-        // The function to update the rate based on the room type and check-in and check-out dates
-        function updateRate() {
-            var selectedRoomType = roomType.value;
-            var checkInDate = new Date(checkIn.value);
-            var checkOutDate = new Date(checkOut.value);
-            var days = getWeekdaysBetweenDates(checkInDate, checkOutDate);
-
-            var totalRate = 0;
-            for (var i = 0; i < days.length; i++) {
-                var day = days[i];
-                var rate;
-                if (day.getDay() === 0 || day.getDay() === 6) {
-                    rate = rates[selectedRoomType].weekends;
-                } else {
-                    rate = rates[selectedRoomType].weekdays;
-                }
-                totalRate += rate;
-            }
-            rateDisplay.innerHTML = "Total Rate: ₹" + totalRate;
-        }
-
-        // A helper function to get an array of weekdays between two dates
-        function getWeekdaysBetweenDates(startDate, endDate) {
-            var weekdays = [];
-            var currentDate = startDate;
-            while (currentDate <= endDate) {
-                if (currentDate.getDay() !== 0 && currentDate.getDay() !== 6) {
-                    weekdays.push(currentDate);
-                }
-                currentDate.setDate(currentDate.getDate() + 1);
-            }
-            return weekdays;
-        };
-    </script>
-    <script>
-        $("#check-in-date").datepicker({
-            minDate: new Date(),
-        });
-        $("#check-out-date").datepicker({
-            minDate: new Date(),
-        });
-    </script>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5e6fa3fee53be89cfb4fb9b1"
         type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
