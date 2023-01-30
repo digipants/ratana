@@ -10364,6 +10364,7 @@
           i || (i = t.data(n, p, { form: r })), I(i);
           var a = r.closest("div.w-form");
           (i.done = a.find("> .w-form-done")),
+            (i.fail = a.find("> .w-form-fail")),
             (i.fileUploads = a.find(".w-file-upload")),
             i.fileUploads.each(function (e) {
               !(function (e, n) {
