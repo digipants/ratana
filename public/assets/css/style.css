@@ -3043,9 +3043,9 @@ figcaption {
 
 .col.vert-cent.align-right {
     -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
+    -webkit-justify-content: flex-center;
     -ms-flex-pack: end;
-    justify-content: flex-end;
+    justify-content: flex-center;
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
