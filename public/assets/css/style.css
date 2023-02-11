@@ -4281,10 +4281,6 @@ figcaption {
         flex-direction: column-reverse;
     }
 
-    .col {
-        margin-bottom: 40px;
-    }
-
     .col.left-marg-80 {
         margin-left: 0px;
     }
