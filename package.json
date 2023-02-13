@@ -1,24 +1,13 @@
 {
   "name": "ratana",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": ".eleventy.js",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/digipants/ratana.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/digipants/ratana/issues"
-  },
-  "homepage": "https://github.com/digipants/ratana#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
-  },
-  "description": ""
+  "license": "ISC"
 }
