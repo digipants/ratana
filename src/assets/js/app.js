@@ -15033,15 +15033,16 @@
   },
 });
 
-var popup = document.querySelector(".popup-overlay");
-var btn = document.querySelector("#popup-btn");
-var close = document.querySelector(".popup-close");
+// Delay time in milliseconds
+const delayTime = 5000;
 
-btn.onclick = function () {
-  popup.style.display = "block";
-}
+// Show the popup after the specified delay time
+setTimeout(() => {
+  document.getElementById("popup").style.display = "block";
+}, delayTime);
 
-close.onclick = function () {
-  popup.style.display = "none";
-}
+// Close the popup when the close button is clicked
+document.getElementById("close-button").addEventListener("click", () => {
+  document.getElementById("popup").style.display = "none";
+});
 
