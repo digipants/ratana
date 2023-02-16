@@ -2775,8 +2775,8 @@ figcaption {
 }
 
 .section.large.photo-background {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.5)), to(rgba(69, 93, 88, 0.5))), url("https://ratanainternational.com/assets/images/background.jpg");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.5), rgba(69, 93, 88, 0.5)), url("https://ratanainternational.com/assets/images/background.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.5)), to(rgba(69, 93, 88, 0.5))), url("https://ratanainternational.com/assets/images/background.png");
+    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.5), rgba(69, 93, 88, 0.5)), url("https://ratanainternational.com/assets/images/background.png");
     background-position: 0px 0px, 30% 50%;
     background-size: auto, cover;
     color: #fff;
@@ -4272,8 +4272,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
     .banner-image {
         top: 0px;
         max-height: 100vh;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.21)), to(rgba(69, 93, 88, 0.21))), url("https://ratanainternational.com/assets/images/hall.jpg");
-        background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.21), rgba(69, 93, 88, 0.21)), url("https://ratanainternational.com/assets/images/hall.jpg");
         background-position: 0px 0px, 50% 50%;
         background-size: auto, cover;
     }
@@ -4517,8 +4515,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 
     .banner-image {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.36)), to(rgba(69, 93, 88, 0.36))), url("https://ratanainternational.com/assets/images/hall.jpg");
-        background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.36), rgba(69, 93, 88, 0.36)), url("https://ratanainternational.com/assets/images/hall.jpg");
         background-position: 0px 0px, 50% 50%;
         background-size: auto, cover;
     }
