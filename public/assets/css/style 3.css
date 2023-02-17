@@ -2783,15 +2783,15 @@ figcaption {
 }
 
 .section.large.photo-background.event {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.56)), to(rgba(69, 93, 88, 0.56))), url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e73cf70b84906fc1d2676f4_conference.jpeg");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.56), rgba(69, 93, 88, 0.56)), url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e73cf70b84906fc1d2676f4_conference.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.56)), to(rgba(69, 93, 88, 0.56))), url("https://ratanainternational.com/assets/images/5e73cf70b84906fc1d2676f4_conference.jpeg");
+    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.56), rgba(69, 93, 88, 0.56)), url("https://ratanainternational.com/assets/images/5e73cf70b84906fc1d2676f4_conference.jpeg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
 }
 
 .section.large.photo-background.wedding {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.41)), to(rgba(69, 93, 88, 0.41))), url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e73d367c5e7b6a7b677be7b_wedding2.jpeg");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.41), rgba(69, 93, 88, 0.41)), url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e73d367c5e7b6a7b677be7b_wedding2.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.41)), to(rgba(69, 93, 88, 0.41))), url("https://ratanainternational.com/assets/images/5e73d367c5e7b6a7b677be7b_wedding2.jpeg");
+    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.41), rgba(69, 93, 88, 0.41)), url("https://ratanainternational.com/assets/images/5e73d367c5e7b6a7b677be7b_wedding2.jpeg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
 }
@@ -3908,21 +3908,21 @@ figcaption {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 3px;
-    background-image: url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e73d6c7b84906edf2269b04_hotel-intro.jpeg");
+    background-image: url("https://ratanainternational.com/assets/images/5e73d6c7b84906edf2269b04_hotel-intro.jpeg");
     background-position: 50% 50%;
     background-size: cover;
 }
 
 .photo._2 {
-    background-image: url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e73d4ae0a912bf03e34fab1_wedding3.jpeg");
+    background-image: url("https://ratanainternational.com/assets/images/5e73d4ae0a912bf03e34fab1_wedding3.jpeg");
 }
 
 .photo._3 {
-    background-image: url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e7367f6d5e3ae27411baf2e_restaurant-1.jpeg");
+    background-image: url("https://ratanainternational.com/assets/images/5e7367f6d5e3ae27411baf2e_restaurant-1.jpeg");
 }
 
 .photo._4 {
-    background-image: url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e7343cebe65a4f41e5c851e_get-in-touch.jpeg");
+    background-image: url("https://ratanainternational.com/assets/images/5e7343cebe65a4f41e5c851e_get-in-touch.jpeg");
 }
 
 .primary {
@@ -4282,8 +4282,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 
     .section.full-height.photo-background.banner-photo {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#faf7f2), to(#faf7f2)), -webkit-gradient(linear, left top, left bottom, from(rgba(56, 61, 60, 0.8)), to(rgba(56, 61, 60, 0.8))), url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e6fa73c5473203445d2b640_plants.jpg");
-        background-image: linear-gradient(180deg, #faf7f2, #faf7f2), linear-gradient(180deg, rgba(56, 61, 60, 0.8), rgba(56, 61, 60, 0.8)), url("https://assets.website-files.com/5e6fa3fee53be89cfb4fb9b1/5e6fa73c5473203445d2b640_plants.jpg");
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#faf7f2), to(#faf7f2)), -webkit-gradient(linear, left top, left bottom, from(rgba(56, 61, 60, 0.8)), to(rgba(56, 61, 60, 0.8))), url("https://ratanainternational.com/assets/images/5e6fa73c5473203445d2b640_plants.jpg");
+        background-image: linear-gradient(180deg, #faf7f2, #faf7f2), linear-gradient(180deg, rgba(56, 61, 60, 0.8), rgba(56, 61, 60, 0.8)), url("https://ratanainternational.com/assets/images/5e6fa73c5473203445d2b640_plants.jpg");
         background-position: 0px 0px, 0px 0px, 50% 50%;
         background-size: auto, auto, cover;
     }
@@ -4403,7 +4403,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 @media screen and (max-width: 1024px) {
     figure#spinner img {
-            width: 85%;
+        width: 85%;
     }
 }
 
@@ -4694,9 +4694,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
         padding-right: 20px;
         padding-left: 60px;
     }
+
     div#carousel {
         perspective: 1200px;
     }
+
     figure#spinner {
         height: 150px;
     }
