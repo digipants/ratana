@@ -2790,8 +2790,7 @@ figcaption {
 }
 
 .section.large.photo-background.wedding {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.41)), to(rgba(69, 93, 88, 0.41))), url("https://ratanainternational.com/assets/images/5e73d367c5e7b6a7b677be7b_wedding2.jpeg");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.41), rgba(69, 93, 88, 0.41)), url("https://ratanainternational.com/assets/images/5e73d367c5e7b6a7b677be7b_wedding2.jpeg");
+    background-color: #455d58;
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
 }
@@ -4281,8 +4280,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 
     .section.full-height.photo-background.banner-photo {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#faf7f2), to(#faf7f2)), -webkit-gradient(linear, left top, left bottom, from(rgba(56, 61, 60, 0.8)), to(rgba(56, 61, 60, 0.8))), url("https://ratanainternational.com/assets/images/5e6fa73c5473203445d2b640_plants.jpg");
-        background-image: linear-gradient(180deg, #faf7f2, #faf7f2), linear-gradient(180deg, rgba(56, 61, 60, 0.8), rgba(56, 61, 60, 0.8)), url("https://ratanainternational.com/assets/images/5e6fa73c5473203445d2b640_plants.jpg");
         background-position: 0px 0px, 0px 0px, 50% 50%;
         background-size: auto, auto, cover;
     }
