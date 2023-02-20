@@ -921,6 +921,11 @@ textarea.w-select {
     display: none !important
 }
 
+.banquet-head h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width:991px) {
     .w-container {
         max-width: 728px
@@ -991,6 +996,12 @@ textarea.w-select {
     .section.amenities {
         padding-top: 110px;
         padding-bottom: 110px;
+    }
+
+    .banquet-head h1 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 44px;
     }
 }
 
@@ -1090,6 +1101,12 @@ textarea.w-select {
         -ms-flex-pack: start;
         justify-content: flex-start;
     }
+
+    .banquet-head h1 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 34px;
+    }
 }
 
 @media screen and (max-width:479px) {
@@ -1177,6 +1194,13 @@ textarea.w-select {
 
     .amenities-item {
         width: 100%;
+    }
+
+    .banquet-head h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-bottom: 20px;
+        font-size: 24px;
     }
 }
 
