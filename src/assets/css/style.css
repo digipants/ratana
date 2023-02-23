@@ -2807,8 +2807,8 @@ figcaption {
 }
 
 .section.large.photo-background.event {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.56)), to(rgba(69, 93, 88, 0.56))), url("https://ratanainternational.com/assets/images/5e73cf70b84906fc1d2676f4_conference.jpeg");
-    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.56), rgba(69, 93, 88, 0.56)), url("https://ratanainternational.com/assets/images/5e73cf70b84906fc1d2676f4_conference.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 93, 88, 0.56)), to(rgba(69, 93, 88, 0.56))), url("https://ratanainternational.com/assets/images/background.png");
+    background-image: linear-gradient(180deg, rgba(69, 93, 88, 0.56), rgba(69, 93, 88, 0.56)), url("https://ratanainternational.com/assets/images/background.png");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
 }
