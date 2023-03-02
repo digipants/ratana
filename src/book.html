@@ -124,7 +124,8 @@
                             <select id="room-type" name="room-type" class="text-field w-input">
                                 <option value="select">Select</option>
                                 <option value="standard">Standard</option>
-                                <option value="deluxe">Deluxe</option>
+                                <option value="deluxe">Executive</option>
+                                <option value="suite">Business</option>
                                 <option value="suite">Suite</option>
                             </select>
                             <label for="rate-display">
@@ -206,16 +207,20 @@
     <script>
         var rates = {
             standard: {
-                weekdays: 2100,
-                weekends: 2300
+                weekdays: 2150,
+                weekends: 2350
             },
-            deluxe: {
-                weekdays: 2500,
-                weekends: 2700
+            executive: {
+                weekdays: 2550,
+                weekends: 2750
+            },
+            business: {
+                weekdays: 2750,
+                weekends: 2950
             },
             suite: {
-                weekdays: 2900,
-                weekends: 3100
+                weekdays: 2950,
+                weekends: 3150
             }
         };
         // Get the room type, check-in, and check-out input elements
