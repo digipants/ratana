@@ -10,7 +10,7 @@ Allow: /couple
 Allow: /contact
 Allow: /banquet
 Allow: /gallery
-Allow: /team
+Allow: /about-us
 Allow: /jashn
 Allow: /menu
 Allow: /book
