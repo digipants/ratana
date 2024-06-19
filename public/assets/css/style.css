@@ -3304,7 +3304,7 @@ figcaption {
     display: flex;
     width: 100%;
     max-width: 1300px;
-    padding-right: 100px;
+    padding-right: 30px;
     padding-left: 30px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -4266,6 +4266,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     max-width: 70px;
     overflow: hidden;
     right: 0;
+    top: 70px;
     margin: 0px 5px;
     border-radius: 5px;
     box-shadow: 5px 0px 10px;
@@ -4712,7 +4713,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
     .nav-container {
         padding-right: 20px;
-        padding-left: 60px;
+        padding-left: 20px;
     }
 
     div#carousel {
