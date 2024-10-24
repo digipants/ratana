@@ -2961,11 +2961,11 @@ figcaption {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 100px rgba(2, 2, 2, 0.542);
     width: 80%;
-    max-width: 800px;
+    max-width: 500px;
     text-align: center;
     z-index: 1001;
     animation: fadeIn 3s;
@@ -2988,6 +2988,7 @@ figcaption {
 
 .popup-content img {
     box-sizing: border-box;
+    height: 200px;
     box-shadow: 0px 0px 100px rgba(2, 2, 2, 0.542);
     margin-bottom: 40px;
     border-radius: 5px;
