@@ -2,24 +2,44 @@ import User from '../schema/db.js'
 import bcryptjs from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv'
+import { z } from 'zod'
+import { errorHandler } from '../utils/error.js';
+
+const userSchema = z.object({
+    username: z.string().min(3, { message: "Username must be at least 3 characters long." }),
+    email: z.string().email({ message: "Invalid email address." }),
+    password: z.string()
+        .min(6, { message: "Password must be at least 6 characters long." })
+        .regex(/[a-z]/, { message: "Password must contain at least one lowercase letter." })
+        .regex(/[A-Z]/, { message: "Password must contain at least one uppercase letter." })
+        .regex(/[0-9]/, { message: "Password must contain at least one number." })
+        .regex(/[\W_]/, { message: "Password must contain at least one special character." })
+});
 
 dotenv.config();
 
 
 export const signup = async (req, res, next) => {
-    const username = req.body.username;
-    const email = req.body.email;
-    const password = req.body.password;
-    const hashedpassword = bcryptjs.hashSync(password, 10);
-    console.log(hashedpassword)
-    const newUser = new User({ username, email, password: hashedpassword });
     try {
+        const validationResult = userSchema.parse(req.body);
+        if (!validationResult) {
+            return res.status(400).josn({
+                errors: validationResult.error.errors.map((err) => err.message)
+            })
+        }
+        const username = req.body.username;
+        const email = req.body.email;
+        const password = req.body.password;
+        const hashedpassword = bcryptjs.hashSync(password, 10);
+        console.log(hashedpassword)
+        const newUser = new User({ username, email, password: hashedpassword });
+
         await newUser.save();
         res.status(201).json({
             msg: "user is created succesfully"
         })
-    } catch (err) {
-        next(err);
+    } catch (error) {
+        next(error)
     }
 };
 export const signin = async (req, res, next) => {
@@ -27,15 +47,15 @@ export const signin = async (req, res, next) => {
     try {
         const validuser = await User.findOne({ email: email });
         if (!validuser) {
-            return next(errorhandler(401, 'User not found'));
+            return next(errorHandler(401,"user not found"));
         }
         const validpassword = bcryptjs.compareSync(password, validuser.password);
         if (!validpassword) {
-            return next(errorhandler(401, 'Invalid Credentials'));
+            return next(errorHandler(401,"invalid password"))
         }
         const token = jwt.sign({ id: validuser._id },
             process.env.JWT_SECRET
-        )
+        );
         const expiryDate = new Date(Date.now() + 3600000);
         const { password: hashedpassword, ...userData } = validuser._doc;
 
@@ -94,6 +114,6 @@ export const google = async (req, res, next) => {
     }
 };
 
-export const signout=async(req,res,next)=>{
+export const signout = async (req, res, next) => {
     res.clearCookie('access_token').status(200).json('Signout success!');
 }
