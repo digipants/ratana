@@ -4,9 +4,7 @@ import About from "./pages/About.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
 import Profile from "./pages/Profille.jsx";
-import Header from "./components/Header.jsx";
 import PrivateRoute from "./components/PrivateRoute.jsx";
-import HomeHtml from "./htmlRoute/homeHtml.jsx";
 import Banquet from "./htmlRoute/Banquet.jsx";
 import Book from "./htmlRoute/Book.jsx";
 import Contact from "./htmlRoute/Contact.jsx";
@@ -19,6 +17,7 @@ import Policy from "./htmlRoute/Policy.jsx";
 import PrivacyPolicy from "./htmlRoute/PrivacyPolicy.jsx";
 import TermsConditions from "./htmlRoute/TermsConditions.jsx";
 import Thanks from "./htmlRoute/Thanks.jsx";
+import HomeRatana from "./htmlRoute/HomeRatana.jsx";
 
 export default function App() {
   return (
@@ -38,7 +37,7 @@ export default function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/couple" element={<Couple/>}/>
         <Route path="/hotel-gallery" element={<HotelGallery/>}/>
-        <Route path="/home" element={<HomeHtml/>} />
+        <Route path="/home" element={<HomeRatana/>} />
         <Route path="/jashn" element={<Jashn/>}/>
         <Route path="/policy" element={<Policy/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
