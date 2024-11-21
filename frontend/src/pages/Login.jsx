@@ -4,7 +4,7 @@ import {
   signinstart,
   signinsuccess,
   signinfailure
-} from "../redux/user/userslice.js";
+} from "../redux/user/userSlice.js"
 import { useDispatch, useSelector } from "react-redux";
 import Google from "../components/Google.jsx";
 
