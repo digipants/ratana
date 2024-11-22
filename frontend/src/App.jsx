@@ -16,7 +16,7 @@ import Policy from "./htmlRoute/Policy.jsx";
 import PrivacyPolicy from "./htmlRoute/PrivacyPolicy.jsx";
 import TermsConditions from "./htmlRoute/TermsConditions.jsx";
 import Thanks from "./htmlRoute/Thanks.jsx";
-import HomeRatana from './htmlRoute/HomeRatana.jsx'
+import HomeRatana from './htmlRoute/HomeRatana.jsx';
 
 export default function App() {
   return (
