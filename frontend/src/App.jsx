@@ -24,7 +24,7 @@ export default function App() {
     <BrowserRouter>
       {/* <Header /> */}
       <Routes>
-        <Route path="/" element={< HomeRatana/>} />
+        <Route path="/home" element={< HomeRatana/>} />
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
