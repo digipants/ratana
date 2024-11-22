@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
@@ -24,7 +23,7 @@ export default function App() {
     <BrowserRouter>
       {/* <Header /> */}
       <Routes>
-        <Route path="/home" element={< HomeRatana/>} />
+        <Route path="/" element={< HomeRatana/>} />
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -37,7 +36,6 @@ export default function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/couple" element={<Couple/>}/>
         <Route path="/hotel-gallery" element={<HotelGallery/>}/>
-        {/* <Route path="/home" element={<HomeRatana/>} /> */}
         <Route path="/jashn" element={<Jashn/>}/>
         <Route path="/policy" element={<Policy/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
