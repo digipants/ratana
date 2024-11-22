@@ -37,7 +37,7 @@ export default function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/couple" element={<Couple/>}/>
         <Route path="/hotel-gallery" element={<HotelGallery/>}/>
-        <Route path="/home" element={<HomeRatana/>} />
+        {/* <Route path="/home" element={<HomeRatana/>} /> */}
         <Route path="/jashn" element={<Jashn/>}/>
         <Route path="/policy" element={<Policy/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
