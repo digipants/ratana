@@ -20,7 +20,7 @@ import HomeRatana from './htmlRoute/HomeRatana.jsx';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<HomeRatana/>}/>
         <Route path="/about" element={<About />} />
