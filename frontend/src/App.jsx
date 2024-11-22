@@ -16,14 +16,13 @@ import Policy from "./htmlRoute/Policy.jsx";
 import PrivacyPolicy from "./htmlRoute/PrivacyPolicy.jsx";
 import TermsConditions from "./htmlRoute/TermsConditions.jsx";
 import Thanks from "./htmlRoute/Thanks.jsx";
-import HomeRatana from "./htmlRoute/HomeRatana.jsx";
+import HomeRatana from './htmlRoute/HomeRatana.jsx'
 
 export default function App() {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
       <Routes>
-        <Route path="/" element={< HomeRatana/>} />
+        <Route path="/" element={<HomeRatana/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
