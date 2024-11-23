@@ -17,7 +17,6 @@ import PrivacyPolicy from "./htmlRoute/PrivacyPolicy.jsx";
 import TermsConditions from "./htmlRoute/TermsConditions.jsx";
 import Thanks from "./htmlRoute/Thanks.jsx";
 import HomeRatana from './htmlRoute/HomeRatana.jsx';
-import { Suspense } from "react";
 
 export default function App() {
   return (
