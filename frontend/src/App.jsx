@@ -22,7 +22,7 @@ export default function App() {
   return (
     <BrowserRouter basename="/">
       <Routes>
-        <Route path="/" element={<HomeRatana/>}/>
+        <Route exact path="/" element={<HomeRatana/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
