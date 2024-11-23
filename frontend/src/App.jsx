@@ -17,12 +17,13 @@ import PrivacyPolicy from "./htmlRoute/PrivacyPolicy.jsx";
 import TermsConditions from "./htmlRoute/TermsConditions.jsx";
 import Thanks from "./htmlRoute/Thanks.jsx";
 import HomeRatana from './htmlRoute/HomeRatana.jsx';
+import { Suspense } from "react";
 
 export default function App() {
   return (
     <BrowserRouter basename="/">
       <Routes>
-        <Route exact path="/" element={<HomeRatana/>}/>
+        <Route exact path="/" element={<Suspense fallback={"loading.."}><HomeRatana/></Suspense>}/>
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
