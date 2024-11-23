@@ -23,7 +23,7 @@ export default function App() {
   return (
     <BrowserRouter basename="/">
       <Routes>
-        <Route exact path="/" element={<Suspense fallback={"loading.."}><HomeRatana/></Suspense>}/>
+        <Route path="/" element={<HomeRatana/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
