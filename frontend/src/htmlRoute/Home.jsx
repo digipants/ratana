@@ -2,7 +2,7 @@
 //     return <iframe src="/index.html" style={{ width: '100%', height: '100vh', border: 'none' }} />;
 // }
 
-export default function HomeRatana() {
+export default function Home() {
     return (
         <iframe
             src="/index.html"
@@ -11,7 +11,6 @@ export default function HomeRatana() {
                 height: '100vh',
                 border: 'none',
             }}
-            title="Home Ratana"
         />
     );
 }
