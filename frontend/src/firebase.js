@@ -6,7 +6,7 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAJH5z1T25cAY08QQF0tP1ErohgLqVO_oY",
-  authDomain: "https://ratanainternational.com/",
+  authDomain: "ratnaauth.firebaseapp.com",
   projectId: "ratnaauth",
   storageBucket: "ratnaauth.firebasestorage.app",
   messagingSenderId: "1017201036343",
