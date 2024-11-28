@@ -19,3 +19,5 @@ Currently, two official plugins are available:
 # https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writing-manually
 
 # render is mentioned in this link = https://stackoverflow.com/questions/43324649/react-router-not-working-after-building-the-app
+
+# check the google console and update the links 
