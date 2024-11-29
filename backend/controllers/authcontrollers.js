@@ -27,10 +27,20 @@ export const signup = async (req, res, next) => {
                 errors: validationResult.error.errors.map((err) => err.message)
             })
         }
+
         const username = req.body.username;
         const email = req.body.email;
         const password = req.body.password;
         const hashedpassword = bcryptjs.hashSync(password, 10);
+        if (!username) {
+            return next(errorHandler(401, "Username is required!"))
+        }
+        if (!email) {
+            return next(errorHandler(401, "email is required!"));
+        }
+        if (!password) {
+            return next(errorHandler(401, "password is required!"))
+        }
         console.log(hashedpassword)
         const newUser = new User({ username, email, password: hashedpassword });
 
@@ -42,16 +52,23 @@ export const signup = async (req, res, next) => {
         next(error)
     }
 };
+
 export const signin = async (req, res, next) => {
     const { email, password } = req.body;
     try {
+        const validationResult = userSchema.parse(req.body);
+        if (!validationResult) {
+            return res.status(400).josn({
+                errors: validationResult.error.errors.map((err) => err.message)
+            })
+        }
         const validuser = await User.findOne({ email: email });
         if (!validuser) {
-            return next(errorHandler(401,"user not found"));
+            return next(errorHandler(401, "user not found"));
         }
         const validpassword = bcryptjs.compareSync(password, validuser.password);
         if (!validpassword) {
-            return next(errorHandler(401,"invalid password"))
+            return next(errorHandler(401, "invalid password"))
         }
         const token = jwt.sign({ id: validuser._id },
             process.env.JWT_SECRET
