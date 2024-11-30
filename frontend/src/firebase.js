@@ -5,13 +5,15 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAJH5z1T25cAY08QQF0tP1ErohgLqVO_oY",
+  apiKey:"AIzaSyAJH5z1T25cAY08QQF0tP1ErohgLqVO_oY",
   authDomain: "ratnaauth.firebaseapp.com",
   projectId: "ratnaauth",
-  storageBucket: "ratnaauth.firebasestorage.app",
+  storageBucket: "ratnaauth.appspot.app",
   messagingSenderId: "1017201036343",
   appId: "1:1017201036343:web:3fd85992abd2064b5883b2"
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
+
+
