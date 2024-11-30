@@ -8,7 +8,7 @@ const firebaseConfig = {
   apiKey:"AIzaSyAJH5z1T25cAY08QQF0tP1ErohgLqVO_oY",
   authDomain: "ratnaauth.firebaseapp.com",
   projectId: "ratnaauth",
-  storageBucket: "ratnaauth.appspot.app",
+  storageBucket: "ratnaauth.firebasestorage.app",
   messagingSenderId: "1017201036343",
   appId: "1:1017201036343:web:3fd85992abd2064b5883b2"
 };
