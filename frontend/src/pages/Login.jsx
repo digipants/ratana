@@ -10,14 +10,13 @@ import Google from "../components/Google.jsx";
 
 export default function Login() {
   const [formData, setFormData] = useState({});
-  const { loading, error } = useSelector((state) => state.user);
+  const { loading, error } = useSelector((state) => state.user); 
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
-
 
   const handleErrorParameter = (response) => {
     try {
@@ -42,25 +41,26 @@ export default function Login() {
       const data = await res.json();
 
       if (!res.ok || data.success === false) {
-        const errorMessage = handleErrorParameter(data); 
+        const errorMessage = handleErrorParameter(data);
         dispatch(signinfailure({ message: errorMessage }));
         return;
       }
 
       dispatch(signinsuccess(data));
-      navigate("/");
     } catch (error) {
-      const errorMessage = handleErrorParameter(error); 
+      const errorMessage = handleErrorParameter(error);
       dispatch(signinfailure({ message: errorMessage }));
     }
   };
 
-
   useEffect(() => {
+    if (user) {
+      navigate("/");
+    }
     return () => {
       dispatch(signinfailure(null)); 
     };
-  }, [dispatch]);
+  }, [user, navigate, dispatch]);
 
   return (
     <div className="p-3 max-w-lg mx-auto">
