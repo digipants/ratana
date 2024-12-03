@@ -5,13 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAJH5z1T25cAY08QQF0tP1ErohgLqVO_oY",
-  authDomain: "ratnaauth.firebaseapp.com",
-  projectId: "ratnaauth",
-  storageBucket: "ratnaauth.firebasestorage.app",
-  messagingSenderId: "1017201036343",
-  appId: "1:1017201036343:web:3fd85992abd2064b5883b2"
+  apiKey: "AIzaSyAigbMmm4EdL0t_iwUxA7AidwmzyQMG9GE",
+  authDomain: "ratana-5f5fa.firebaseapp.com",
+  projectId: "ratana-5f5fa",
+  storageBucket: "ratana-5f5fa.firebasestorage.app",
+  messagingSenderId: "435712416205",
+  appId: "1:435712416205:web:413eb44676633784740c84",
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
+
