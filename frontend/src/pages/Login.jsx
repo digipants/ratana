@@ -10,7 +10,7 @@ import Google from "../components/Google.jsx";
 
 export default function Login() {
   const [formData, setFormData] = useState({});
-  const { loading, error } = useSelector((state) => state.user); 
+  const { loading, error,user } = useSelector((state) => state.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
