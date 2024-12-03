@@ -4,7 +4,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDTN7n0AocGqwJ_VnZGcDqiaa0m1K4uHdw",
+  apiKey: import.meta.env.VITE_FIREBASE_KEY,
   authDomain: "ratnaauth.firebaseapp.com",
   projectId: "ratnaauth",
   storageBucket: "ratnaauth.appspot.com",
