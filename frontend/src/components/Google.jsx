@@ -4,11 +4,11 @@ import { useDispatch } from 'react-redux';
 import { signinsuccess } from '../redux/user/userSlice.js';
 import { useNavigate } from 'react-router-dom';
 
-export default function OAuth() {
+export default function OAuth() { 
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleafterSignInSucces=()=>{
-    window.location.href='/index.html'
+    window.location.href='/home.html'
   }
   const handleGoogleClick = async () => {
     try {
