@@ -24,6 +24,7 @@ export default function App() {
     <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<Block/>}/>
+        <Route path="/book" element={<Block/>}/>
         {/* <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
