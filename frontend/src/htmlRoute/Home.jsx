@@ -5,7 +5,7 @@
 export default function Home() {
     return (
         <iframe
-            src="/home.html"
+            src="/"
             style={{
                 width: '100%',
                 height: '100vh',
